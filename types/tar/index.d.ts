@@ -8,7 +8,7 @@
 
 import stream = require('stream');
 import zlib = require('zlib');
-import MiniPass from 'minipass';
+import MiniPass = require('minipass');
 
 // #region Interfaces
 
@@ -248,7 +248,7 @@ export interface FileStat extends stream.Readable, Fields {
     size: number;
 }
 
-export interface ReadEntry extends MiniPass, HeaderProperties {
+export interface ReadEntry extends InstanceType<typeof MiniPass>, HeaderProperties {
     /** The extended metadata object provided to the constructor. */
     extended: any;
     /** The global extended metadata object provided to the constructor. */
