@@ -7,9 +7,8 @@
 /// <reference types="node" />
 
 import stream = require('stream');
-import events = require('events');
 import zlib = require('zlib');
-import MiniPass = require('minipass');
+import MiniPass from 'minipass';
 
 // #region Interfaces
 
